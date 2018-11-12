@@ -10,10 +10,10 @@ class Database extends mysqli
 	public function __construct() 
 	{
 		// Initialize object with database constants
-		$this->hostname = DATABASE_HOST;
-		$this->username = DATABASE_USER;
-		$this->password = DATABASE_PASSWORD;
-		$this->database = DATABASE_NAME;	
+		$this->hostname = 'localhost';
+		$this->username = 'root';
+		$this->password = '';
+		$this->database = 'myInfo';	
 		
 	    // Open database connection
 		parent::__construct($this->hostname, $this->username, $this->password, $this->database);
